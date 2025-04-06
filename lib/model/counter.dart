@@ -20,8 +20,8 @@ class Counter extends ChangeNotifier {
   }
 
   /// リスト追加
-  void append(int value) {
-    _counts.add(value);
+  void append() {
+    _counts.add(_count);
     notifyListeners();
   }
 
